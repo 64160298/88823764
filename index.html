@@ -129,23 +129,66 @@
 
 
         <form>
-            <label for="name">ชื่อ&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="lastname">สกุล&emsp;&emsp;&emsp;&emsp;&ensp;</label>
-            <input type="text" id="last" name="last"><br>
-            <label for="date">วัน/เดือน/ปีเกิด&nbsp;</label>
-            <input type="datetime-local"><br>
-            <label for="age">อายุ&emsp;&emsp;&emsp;&emsp;&ensp;</label>
-            <input type="text" id="age" name="age"><br>
-            <label for="gender">เพศ&emsp;&emsp;&emsp;&emsp;&ensp;</label>
-            <input type="radio" value="male" name="radio_test">
-            <label for="r3">ชาย:</label>
-            <input type="radio" value="female" name="radio_test">
-            <label for="r4">หญิง:</label><br>
-            <label for="pic">รูป&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;</label>
-            <input type="file" id="pic" name="pic"><br>
-            <label for="age">ที่อยู่&emsp;&emsp;&emsp;&emsp;&ensp;</label>
-            <textarea id="address" rows="10"></textarea>
+            <table>
+                <tr>
+                    <td>ชื่อ&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;</td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td>สกุล&emsp;&emsp;&emsp;&emsp;&ensp;</td>
+                    <td><input type="text" id="last" name="last"></td>
+                </tr>
+                <tr>
+                    <td>วัน/เดือน/ปีเกิด</td>
+                    <td><input type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td>อายุ</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>เพศ</td>
+                    <td><input type="radio" name="gen">ชาย<input type="radio" name="gen">หญิง</td>
+                </tr>
+                <tr>
+                    <td>รูป</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>อายุ</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>ที่อยู่</td>
+                    <td><textarea id="address" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>สีที่ชอบ</td>
+                    <td><select>
+                        <option selected disabled>เลือก</option>
+                        <option value="1">สีแดง</option>
+                        <option value="2">สีส้ม</option>
+                        <option value="3">สีเหลือง</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>แนวเพลงที่ชอบ</td>
+                    <td><input type="radio" value="3" name="song">เพื่อชีวิต
+                        <input type="radio" value="1" name="song">
+                        ลูกทุ่ง<input type="radio" value="2" name="song">
+                        อื่นๆ
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">
+                        ยินยอมให้เก็บข้อมูล</td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
         </form>
     </body>
 </html>
